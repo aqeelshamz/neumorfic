@@ -19,7 +19,7 @@ Add .button class to the element.
 
 eg: ```<input type="button" value="Login" class="button">```
 
-#TextBox
+# TextBox
 Add .textbox class to the element.
 
 eg: ```<input type="text" class="textbox">```
@@ -47,7 +47,7 @@ eg:
     <label for="check2"></label>Mango
 </checkbox>
 ```
-#Radio
+# Radio
 Use radio tag with input and label inside.
 
 eg:
