@@ -25,7 +25,7 @@ Add .textbox class to the element.
 eg: ```<input type="text" class="textbox">```
 
 # CheckBox
-Use checkbox tag with input and label inside.
+Use checkbox tag with input (type must be checkbox) and label inside.
 
 eg: 
 ```
@@ -48,7 +48,7 @@ eg:
 </checkbox>
 ```
 # Radio
-Use radio tag with input and label inside.
+Use radio tag with input (type must be radio) and label inside.
 
 eg:
 ```
@@ -79,3 +79,62 @@ eg:
     <label for="ferrari">Ferrari</label>
 </radio>
 ```
+# Switch
+Use switch tag with input (type must be checkbox) inside.
+
+eg:
+```
+<switch>
+   <input type="checkbox" name="">
+</switch>
+```
+# Navigation Buttons
+Use classes .nav-up, .nav-down, .nav-right, .nav-left :
+
+Navigation up:
+```<input type="button" value="" class="nav-up">```
+Navigation down:
+```<input type="button" value="" class="nav-down">```
+Navigation right:
+```<input type="button" value="" class="nav-right">```
+Navigation left:
+```<input type="button" value="" class="nav-left">```
+
+# Progress Bar
+Use the code below:
+```
+<div class="progress-bar">
+    <div class="progress" style="width: 75%;">
+        <div class="percentage pg-toggle">
+            <p class="pg-text">75%</p>
+        </div>
+    </div>
+</div>
+```
+You just need to change the width of '.progress' using CSS. You don't need to update '.pg-text'. It will be updated automatically. 
+You can change the color of progress bar by changing 'background' property of '.progress' class.
+
+CSS code eg:
+```
+.progress{
+   background: blue; //makes the progress bar blue in color
+}
+```
+
+# Dropdown Menu
+Use the code below:
+```
+<div class="dropdown">
+   <input type="button" value="Dropdown" class="button dropbtn">
+   <div class="list listtoggle">
+       <input type="button" value="Option 1" class="button d-list">
+       <input type="button" value="Option 2" class="button d-list">
+       <input type="button" value="Option 3" class="button d-list">
+       <input type="button" value="Option 4" class="button d-list">
+   </div>
+</div>
+```
+
+Add options inside div '.list listtoggle' by using input type=button:
+```<input type="button" value="Option" class="button d-list">```
+
