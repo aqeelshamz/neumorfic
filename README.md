@@ -92,13 +92,25 @@ eg:
 Use classes .nav-up, .nav-down, .nav-right, .nav-left :
 
 Navigation up:
-```<input type="button" value="" class="nav-up">```
+
+```
+<input type="button" value="" class="nav-up">
+```
 Navigation down:
-```<input type="button" value="" class="nav-down">```
+
+```
+<input type="button" value="" class="nav-down">
+```
 Navigation right:
-```<input type="button" value="" class="nav-right">```
+
+```
+<input type="button" value="" class="nav-right">
+```
 Navigation left:
-```<input type="button" value="" class="nav-left">```
+
+```
+<input type="button" value="" class="nav-left">
+```
 
 # Progress Bar
 Use the code below:
@@ -136,5 +148,7 @@ Use the code below:
 ```
 
 Add options inside div '.list listtoggle' by using input type=button:
-```<input type="button" value="Option" class="button d-list">```
+```
+<input type="button" value="Option" class="button d-list">
+```
 
