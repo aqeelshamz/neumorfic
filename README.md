@@ -149,6 +149,12 @@ CSS code eg:
 
 ![color_progressbar](progressblue.png)
 
+You can also add gradient to make it more attractive: 
+
+eg: ```background: linear-gradient(90deg, dodgerblue, cyan);```
+
+![gradient_progressbar](progressgrad.png)
+
 # Dropdown Menu
 ![dropmenu](dropmenu.png)
 
