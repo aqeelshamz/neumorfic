@@ -15,16 +15,19 @@ Add neumorfic to your webpage:
 
 Elements:
 # Button
+![button](button.png)
 Add .button class to the element.
 
 eg: ```<input type="button" value="Login" class="button">```
 
 # TextBox
+![textbox](textbox.png)
 Add .textbox class to the element.
 
 eg: ```<input type="text" class="textbox">```
 
 # CheckBox
+![checkbox](checkbox.png)
 Use checkbox tag with input (type must be checkbox) and label inside.
 
 eg: 
@@ -48,6 +51,7 @@ eg:
 </checkbox>
 ```
 # Radio
+![radio](radio.png)
 Use radio tag with input (type must be radio) and label inside.
 
 eg:
@@ -80,6 +84,7 @@ eg:
 </radio>
 ```
 # Switch
+![switch](switch.png)
 Use switch tag with input (type must be checkbox) inside.
 
 eg:
@@ -89,6 +94,7 @@ eg:
 </switch>
 ```
 # Navigation Buttons
+![navbuttons](navbuttons.png)
 Use classes .nav-up, .nav-down, .nav-right, .nav-left :
 
 Navigation up:
@@ -113,6 +119,7 @@ Navigation left:
 ```
 
 # Progress Bar
+![progressbar](progressbar.png)
 Use the code below:
 ```
 <div class="progress-bar">
@@ -134,6 +141,7 @@ CSS code eg:
 ```
 
 # Dropdown Menu
+![dropmenu](dropmenu.png)
 Use the code below:
 ```
 <div class="dropdown">
