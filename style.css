@@ -264,22 +264,22 @@ switch input:checked:before {
   background: -webkit-gradient(linear, left top, right top, from(#f7f8fc), to(#9da1b1));
   background: linear-gradient(90deg, #f7f8fc, #9da1b1);
   background-size: 1500%;
-  background-image: url("./rightarrow.svg");
+  background-image: url("./assets/rightarrow.svg");
   background-size: 50% 50%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .nav-left {
-  background-image: url("./leftarrow.svg");
+  background-image: url("./assets/leftarrow.svg");
 }
 
 .nav-up {
-  background-image: url("./uparrow.svg");
+  background-image: url("./assets/uparrow.svg");
 }
 
 .nav-down {
-  background-image: url("./downarrow.svg");
+  background-image: url("./assets/downarrow.svg");
 }
 
 .dropdown .dropbtn {
@@ -287,7 +287,7 @@ switch input:checked:before {
   transition: 0.4s;
   text-align: left;
   padding-left: 20px;
-  background-image: url("./downarrow.svg");
+  background-image: url("./assets/downarrow.svg");
   background-size: 50% 50%;
   background-position: right center;
   background-repeat: no-repeat;
