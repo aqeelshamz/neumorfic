@@ -1,0 +1,301 @@
+$light: #f7f8fc;
+$lightShadow: #9da1b1;
+$lightText: #6d7587;
+$white: #ffffff;
+$defaultWidth: 150px;
+$defaultHeight: 30px;
+
+$blueGradient : linear-gradient(90deg, blue, dodgerblue, cyan);
+
+@mixin defaultSize {
+    width: $defaultWidth;
+    height: $defaultHeight;
+}
+
+@mixin lightGradient {
+    background: linear-gradient(90deg, $light, $lightShadow);
+    background-size: 1500%;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-gradient {
+    background: $light;
+}
+
+body {
+    background: $light;
+}
+
+.button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    color: $lightText;
+    box-shadow: 2px 2px 4px $lightShadow, -4px -4px 4px $white;
+    outline: 0;
+    @include defaultSize();
+    @include lightGradient();
+}
+
+.button:active,
+.nav-right:active,
+.nav-left:active,
+.nav-up:active,
+.nav-down:active{
+    box-shadow: inset 2px 2px 4px $lightShadow, inset -2px -2px 4px $white;
+}
+
+.textbox {
+    background: $light;
+    border: 0;
+    border-radius: 30px;
+    color: $lightText;
+    box-shadow: inset 1px 1px 2px $lightShadow, inset -2px -2px 2px $white;
+    padding: 0px 10px 0px 10px;
+    outline: 0;
+    transition: 0.2s;
+    @include defaultSize();
+    @include lightGradient();
+}
+
+.textbox:focus {
+    box-shadow: inset 2px 2px 4px $lightShadow, inset -2px -2px 4px $white;
+}
+
+radio {
+    margin-right: 10px;
+    input {
+        display: none;
+    }
+
+    label {
+        position: relative;
+        color: $lightText;
+        display: flex;
+    }
+
+    label:before {
+        $size: 15px;
+        content: "";
+        width: $size;
+        height: $size;
+        border-radius: 50% !important;
+        margin-right: 10px;
+        border: 2px solid $light;
+        box-shadow: 2px 2px 4px $lightShadow, -2px -2px 4px $white;
+        background: $light;
+        transition: 0.3s;
+    }
+
+    input:checked ~ label:before {
+        border: 2px solid $light;
+        background: $lightText;
+    }
+}
+
+checkbox {
+    margin-right: 10px;
+    color: $lightText;
+    display: flex;
+
+    input {
+        display: none;
+    }
+
+    label {
+        $size: 20px;
+        background: $light;
+        width: $size;
+        height: $size;
+        border-radius: 4px;
+        box-shadow: 2px 2px 4px $lightShadow, -2px -2px 4px $white;
+        position: relative;
+        @include center();
+        margin-right: 10px;
+    }
+
+    input:checked ~ label:before {
+        border-right: 2px solid $lightText;
+        border-bottom: 2px solid $lightText;
+    }
+
+    label:before {
+        content: "";
+        position: absolute;
+        width: 35%;
+        height: 55%;
+        border-right: 2px solid $light;
+        border-bottom: 2px solid $light;
+        transform: rotateZ(40deg);
+        bottom: 30%;
+        transition: 0.3s;
+    }
+}
+
+switch {
+    input {
+        outline: 0;
+        position: relative;
+        height: 25px;
+        width: 50px;
+        appearance: none;
+        border-radius: 50px;
+        background: $light;
+        box-shadow: inset 2px 2px 4px $lightShadow, inset -2px -2px 4px $white;
+        transition: 0.4s;
+    }
+
+    input:checked {
+        background: $lightText;
+        box-shadow: inset 2px 2px 6px #444444;
+    }
+
+    input:before {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: $white;
+        transition: 0.4s;
+        box-shadow: 2px 2px 4px $lightShadow;
+    }
+
+    input:checked:before {
+        box-shadow: 0px 0px 0px $lightShadow;
+        left: 28px;
+    }
+}
+
+.progress-bar {
+    user-select: none;
+    width: 350px;
+    height: 10px;
+    box-shadow: 2px 2px 4px $lightShadow, -4px -4px 4px $white;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    .progress {   
+        background: $lightText;  
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        position: relative;
+        .percentage{
+            transition: 0.4s;
+            @include center();
+            width: 50px;
+            height: 30px;
+            position: absolute;
+            right: 0;
+            background: $light;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px $lightShadow, -4px -4px 4px $white;
+            top: -45px;
+            p{
+                color: $lightText;
+                font-weight: 900;
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
+
+.pg-toggle{
+    opacity: 0;
+}
+
+.nav-right,
+.nav-left,
+.nav-up,
+.nav-down {
+    cursor: pointer;
+    border: 0;
+    border-radius: 15px;
+    color: $lightText;
+    box-shadow: 2px 2px 4px $lightShadow, -4px -4px 4px $white;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    @include lightGradient();
+    background-image: url("./rightarrow.svg");
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-left {
+    background-image: url("./leftarrow.svg");
+}
+
+.nav-up {
+    background-image: url("./uparrow.svg");
+}
+
+.nav-down {
+    background-image: url("./downarrow.svg");
+}
+
+.dropdown {
+    .dropbtn{
+        transition: 0.4s;
+        text-align: left;
+        padding-left: 20px;
+        background-image: url('./downarrow.svg');
+        background-size: 50% 50%;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+
+    .list {
+        transition: 0.4s;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        .d-list {
+            border-radius: 0;
+            box-shadow: 2px 2px 4px $lightShadow;
+            text-align: left;
+        }
+
+        .d-list:nth-last-child(1){
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .d-list:hover {
+            background: $white;
+        }
+
+        .d-list:active {
+            box-shadow: inset 2px 2px 4px $lightShadow;
+        }
+    }
+}
+
+.listtoggle{
+    opacity: 0;
+}
+
+.dropbtn-toggle{
+    border-radius: 10px 10px 0 0;
+}
