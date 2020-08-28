@@ -147,6 +147,8 @@ CSS code eg:
 }
 ```
 
+![color_progressbar](progressblue.png)
+
 # Dropdown Menu
 ![dropmenu](dropmenu.png)
 
